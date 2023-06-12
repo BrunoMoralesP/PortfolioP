@@ -1,0 +1,13 @@
+@use './assets/header.scss';
+@use './assets/footer.scss';
+@use './assets/main.scss';
+@use './about.scss';
+@use './contacto.scss';
+@use './projects.scss';
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}

@@ -1,0 +1,11 @@
+.img-tamanio{
+    height: 25rem;
+    width: 40rem;
+    padding-bottom: 3rem;
+}
+@media (max-width: 409px){
+    .img-tamanio{
+        height: 20rem;
+        width: 30rem;
+    }
+}

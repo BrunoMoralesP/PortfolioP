@@ -1,0 +1,55 @@
+@mixin text-color($color){
+    color: $color;
+}
+header {
+    background-color: black;
+    align-content: center;
+    min-height: 10vh;
+}
+a{
+    text-decoration: none;
+    @include text-color(white);
+}
+.navbar-brand {
+    @include text-color(white);
+    font-size: 18px;
+    font-family: 'Bungee', cursive;
+}
+.nav-link{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Bungee', cursive;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    @include text-color(white);;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    background-color: rgba(240, 248, 255, 0.205);
+    @include text-color(white);
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+        justify-content: end;
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .nav-link{
+        font-size: 18px;
+    }
+    }
+    @media (min-width: 1200px){
+        .navbar-brand{
+            font-size: 23px;
+        }
+        .nav-link{
+            font-size: 20px;
+        }
+    }
+
