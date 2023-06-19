@@ -23,4 +23,10 @@ footer{
         min-height: 12vh;
     }
 }
+@media (max-height: 816px){
+    footer{
+        font-size: 1rem;
+    }
+}
+
 

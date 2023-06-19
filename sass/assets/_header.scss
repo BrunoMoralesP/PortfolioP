@@ -11,7 +11,7 @@ a{
     @include text-color(white);
 }
 .navbar-brand {
-    @include text-color(white);
+    @include text-color(rgb(190, 190, 190));
     font-size: 18px;
     font-family: 'Bungee', cursive;
 }
@@ -29,6 +29,12 @@ a{
     line-height: 1;
     background-color: rgba(240, 248, 255, 0.205);
     @include text-color(white);
+}
+.navbar-nav {
+    --bs-nav-link-hover-color: #f8f9fa;
+}
+.navbar-brand:hover {
+    color: rgb(250, 249, 250);
 }
 
 @media (min-width: 992px){
@@ -52,4 +58,8 @@ a{
             font-size: 20px;
         }
     }
-
+@media (max-width: 1300px){
+    .navbar-brand{
+        @include text-color(white);
+    }
+}
