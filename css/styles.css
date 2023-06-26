@@ -74,7 +74,7 @@ a {
 }
 footer {
   background-color: black;
-  min-height: 10vh;
+  min-height: 12vh;
   width: 100%;
   font-size: 1.5rem;
   font-family: "Bungee", cursive;
@@ -93,11 +93,6 @@ footer p {
   width: 4rem;
 }
 
-@media (max-width: 379px) {
-  footer {
-    min-height: 12vh;
-  }
-}
 @media (max-height: 816px) {
   footer {
     font-size: 1rem;
